@@ -20,7 +20,7 @@ string encode(string a, int k)
         }
         else
         {
-            results += new_char;
+            results += a[i];
         }
     }
     return results;
@@ -42,7 +42,8 @@ string decode(string a, int k)
 
 int main()
 {
-    string s = "HOT";
+    string s;
+    getline(cin, s);
     int k = 3;
     cout << s << endl;
     cout << encode(s, k) << endl;
